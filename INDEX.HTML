@@ -21,11 +21,25 @@
        <p></p>  pela frente veja o depoimento das pessoas </h6>
          <h7><img id="ima3" src="download (2).jpeg"></h7>
 <p></p>
-<h9>Matheus: Eu não esperava essa atitude do Batman
+Matheus: Eu não esperava essa atitude do Batman
 <p></p>
+<body>
+    
+
         <p></p>    Claudia: O Batman e Louco meo 
          <p></p>   Jorge: Pare com isso Batman por favor
           <p></p>  Marli: Meu Deus
-         </h9>
+          <button onclick="changeFontSize('aumentar')">Aumentar</button>
+          <button onclick="changeFontSize('reduzir')">Reduzir</button><script>
+          function changeFontSize(action){
+          const elements = ['h1', 'p'];
+          elements.map(element=>
+          )
+          const selector = document.querySelector(element);
+          let value = getComputedStyle(selector).getPropertyValue('font-size');
+          value = value.replace('px', '');
+          value = action === 'aumentar' ? parseInt(value) + 1 : parseInt(value) - 1;
+          selector.style.fontSize = `${value}px`;
+          }
 </body>
 </html>
