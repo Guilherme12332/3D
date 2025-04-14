@@ -1,5 +1,5 @@
 function changeFontSize(action){
-    const elements = ['h1', 'p'];
+    const elements = ['h1', 'p','h2','h3','h4','h5','h6'];
     elements.map(element=>{
     
     const selector = document.querySelector(element);
